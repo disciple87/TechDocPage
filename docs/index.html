@@ -10,8 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"></link>
+        <link href="prism.css" rel="stylesheet" />
     </head>
     <body>
+    <script src="prism.js"></script>
       <nav id="navbar">
           <header>CSS Styling</header>
           <ul>
@@ -44,12 +46,12 @@
                     <li>
                         The following code shows a very simple CSS rule that would achieve the styling described above:
                     </li>
-                <code>
+                <pre><code class="language-css">
                     h1 {
                     color: red;
                     font-size: 5em;
                     }
-                </code>
+                </code></pre>
                 </p>
                 
                 <p>
@@ -65,7 +67,7 @@
                     <li>
                         A CSS stylesheet will contain many such rules, written one after the other.
                     </li>
-                    <code>
+                    <pre><code class="language-css">
                         h1 {
                         color: red;
                         font-size: 5em;
@@ -74,7 +76,7 @@
                         p {
                         color: black;
                         }
-                </code>
+                </code></pre>
                 </p> 
                 <p>
                 You will find that you quickly learn some values, whereas others you will need to look up. The individual property pages on MDN give you a quick way to look up properties and their values when you forget, or want to know what else you can use as a value.
@@ -129,7 +131,7 @@
                     An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML <link> element:
                     </li>
                 </p>
-                <pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!DOCTYPE html&gt;
+                <pre><code class="language-html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                     &nbsp;&nbsp;&lt;head&gt;
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
@@ -146,7 +148,7 @@
                     The CSS file might look something like this:
                     </li>
                 </p>
-                <pre><code>
+                <pre><code class="language-css">
                     h1 {
                     &nbsp;&nbsp;color: blue;
                     &nbsp;&nbsp;background-color: yellow;
@@ -165,7 +167,7 @@
                         In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the specified path to suit, for example:
                     </li>
                 
-                    <pre><code>
+                    <pre><code class="language-html">
                         &lt;!-- Inside a subdirectory called styles inside the current directory --&gt;
                         &lt;link rel="stylesheet" href="styles/style.css"&gt;
                         
@@ -184,7 +186,7 @@
                         So the HTML would look like this:
                     </li>
 
-                    <pre><code>
+                    <pre><code class="language-html">
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
                         &nbsp;&nbsp;&lt;head&gt;
@@ -217,7 +219,7 @@
                 <li>
                     Inline styles are CSS declarations that affect one element only, contained within a style attribute:
                 </li>
-                <pre><code>
+                <pre><code class="language-html">
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                     &nbsp;&nbsp;&lt;head&gt;
