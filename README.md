@@ -1,2 +1,2 @@
 # TechDocPage
-Technical Documentation Page - freecodecamp  link: https://disciple87.github.io/TechDocPage/index.html
+Technical Documentation Page - freecodecamp  link: https://disciple87.github.io/TechDocPage/
