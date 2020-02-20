@@ -19,7 +19,7 @@
             <li><a class="nav-link" href="#syntax">Syntax</a></li>
             <li><a class="nav-link" href="#modules">Modules</a></li>
             <li><a class="nav-link" href="#specifications">Specifications</a></li>
-            <li><a class="nav-link" href="#css-structured">How is CSS structured</a></li>
+            <li><a class="nav-link" href="#how_is_css_structured">How is CSS structured</a></li>
             <li><a class="nav-link" href="#reference">Reference</a></li>
         </ul>
       </nav>
@@ -41,9 +41,9 @@
                 CSS is a rule-based language — you define rules specifying groups of styles that should be applied to particular elements or groups of elements on your web page. For example "I want the main heading on my page to be shown as large red text."
                 </p>
                 <p>
-                    <ul>
+                    <li>
                         The following code shows a very simple CSS rule that would achieve the styling described above:
-                    </ul>
+                    </li>
                 <code>
                     h1 {
                     color: red;
@@ -62,9 +62,9 @@
                 Before the colon, we have the property, and after the colon, the value. CSS properties have different allowable values, depending on which property is being specified. In our example, we have the color property, which can take various color values. We also have the font-size property. This property can take various size units as a value.
                 </p>
                 <p>
-                    <ul>
+                    <li>
                         A CSS stylesheet will contain many such rules, written one after the other.
-                    </ul>
+                    </li>
                     <code>
                         h1 {
                         color: red;
@@ -115,7 +115,7 @@
             </article>
         </section>
 
-        <section class="main-section" id="css-structured">
+        <section class="main-section" id="how_is_css_structured">
             <header>How is CSS structured</header>
             <article>
                 <h3>Applying CSS to your HTML</h3>
@@ -125,9 +125,9 @@
                     In the Getting started with CSS we linked an external stylesheet to our page. This is the most common and useful method of attaching CSS to a document as you can link the CSS to multiple pages, allowing you to style them all with the same stylesheet. In most cases, the different pages of a site will all look pretty much the same, therefore you can use the same set of rules for the basic look and feel.
                 </p>    
                 <p>
-                    <ul>
+                    <li>
                     An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML <link> element:
-                    </ul>
+                    </li>
                 </p>
                 <pre><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!DOCTYPE html&gt;
                     &lt;html&gt;
@@ -142,9 +142,9 @@
                     &nbsp;&nbsp;&lt;/body&gt;
                     &lt;/html&gt;</code></pre>
                 <p>
-                    <ul>
+                    <li>
                     The CSS file might look something like this:
-                    </ul>
+                    </li>
                 </p>
                 <pre><code>
                     h1 {
@@ -161,9 +161,9 @@
                     The href attribute of the <link> element needs to reference a file on your filesystem.
                 </p>
                 <p>
-                    <ul>
+                    <li>
                         In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the specified path to suit, for example:
-                    </ul>
+                    </li>
                 
                     <pre><code>
                         &lt;!-- Inside a subdirectory called styles inside the current directory --&gt;
@@ -180,9 +180,9 @@
                     An internal stylesheet is where you don't have an external CSS file, but instead place your CSS inside a &nbsp;&lt;style&gt;&nbsp;element contained inside the HTML &nbsp;&lt;head&gt;.
                 </p>
                 <p>
-                    <ul>
+                    <li>
                         So the HTML would look like this:
-                    </ul>
+                    </li>
 
                     <pre><code>
                         &lt;!DOCTYPE html&gt;
@@ -214,9 +214,9 @@
                 </p>
                 <p>
                 <b>Inline styles</b><br>
-                <ul>
+                <li>
                     Inline styles are CSS declarations that affect one element only, contained within a style attribute:
-                </ul>
+                </li>
                 <pre><code>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
@@ -252,6 +252,6 @@
 
     
     </main>
-        <script src="" async defer></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
